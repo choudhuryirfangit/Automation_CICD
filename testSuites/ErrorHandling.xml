@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="ErrorHandling"></include>
+		</run>
+	</groups>
+	  <test thread-count="5" name="Place Order Test">
+    <classes>
+      <class name="IrfanChoudhury.tests.PlcaeOrderTest"/>
+    </classes>
+  </test>
+ <!-- Test -->
+  <test thread-count="5" name="Error Valodation Test">
+	  <classes>
+		   <class name="IrfanChoudhury.tests.ErrorValidation"/>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->
